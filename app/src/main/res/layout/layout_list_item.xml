@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            style="@style/text_18sp_black"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_all_app"
+            android:gravity="center"
+            android:text="แก้ไข" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            style="@style/text_18sp_black"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_all_app"
+            android:gravity="center"
+            android:text="ลบ" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_list_item"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_employee_number"
+            style="@style/text_18sp_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รหัสพนักงาน : " />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_employee_name"
+            style="@style/text_18sp_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อพนักงาน : " />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_employee_number_phone"
+            style="@style/text_18sp_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เบอร์โทรศัพท์ : " />
+
+    </LinearLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

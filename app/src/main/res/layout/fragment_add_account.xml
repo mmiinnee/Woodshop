@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.addaccount.AddAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/text_18sp_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ประเภท" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_type"
+                    style="@style/text_18sp_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/text_18sp_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="วันที่" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_date"
+                    style="@style/text_18sp_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textIsSelectable="true" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/text_18sp_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รายละเอียด" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_detail"
+                    style="@style/text_18sp_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/text_18sp_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/text_18sp_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ราคา" />
+
+                    <th.com.woodshop.utils.priceformat.PriceFormatEditText
+                        android:id="@+id/et_price"
+                        style="@style/text_18sp_black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edit_text"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLength="20"
+                        android:maxLines="1"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/text_18sp_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="บาท" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                style="@style/text_18sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_button_all_app"
+                android:text="ย้อนกลับ" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add"
+                style="@style/text_18sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_all_app"
+                android:text="เพิ่มข้อมูล" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

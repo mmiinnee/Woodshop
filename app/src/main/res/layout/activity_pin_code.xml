@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".pincode.PinCodeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_message_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_24sp_black"
+            android:text="กรุณาใส่ PIN เพื่อเข้าสู่ระบบ"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_pincode"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="numberPassword"
+            style="@style/text_24sp_black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_button"
+            style="@style/text_20sp_white"
+            android:enabled="false"
+            android:text="เข้าสู่ระบบ"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_forgot_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/text_18sp_gray"
+            android:text="ลืม PIN"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

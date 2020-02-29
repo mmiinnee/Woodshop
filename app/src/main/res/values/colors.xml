@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#915021</color>
+    <color name="colorPrimaryDark">#40241a</color>
+    <color name="colorAccent">#FAEBB9</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dismiss">#E6E6E6</color>
+    <color name="gray">#A7A7A7</color>
+
+    <color name="wood_orange">#D78E37</color>
+    <color name="wood_orange_pressed">#D78E50</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="btn_menu">#F4BC78</color>
+    <color name="btn_menu_pressed">#DAA769</color>
+
+    <color name="btn_all_app">#E6C86F</color>
+    <color name="btn_all_app_pressed">#C7B070</color>
+
+</resources>
